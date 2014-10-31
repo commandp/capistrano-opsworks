@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-If you haven't installed [Capistrano](https://github.com/capistrano/capistrano), do that and make sure you 
+If you haven't installed [Capistrano](https://github.com/capistrano/capistrano), do that and make sure you
 
     $ bundle exec cap install
 
@@ -73,6 +73,7 @@ set :secret_access_key, '<aws_secret_access_key>'
 set :stack_id, '<opsworks_stack_id>'
 set :app_id, '<opsworks_app_id>'
 set :opsworks_custom_json, '<opsworks_custom_json>'
+set :deploy_comment, '<deploy_comment>'
 ```
 
 Check the task list using
