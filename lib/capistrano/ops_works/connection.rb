@@ -19,7 +19,7 @@ module Capistrano
 
       def deploy args={}
         deploy_id = create_deployment(args)
-        verify deploy_id
+        # verify deploy_id
       end
 
       def check args={}
