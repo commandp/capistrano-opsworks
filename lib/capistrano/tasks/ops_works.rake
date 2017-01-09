@@ -6,7 +6,8 @@ namespace :opsworks do
   def opsworks
     Capistrano::OpsWorks::Connection.new(\
       :access_key_id => fetch(:access_key_id),
-      :secret_access_key => fetch(:secret_access_key)
+      :secret_access_key => fetch(:secret_access_key),
+      :region => fetch(:region)
     )
   end
 

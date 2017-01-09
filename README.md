@@ -70,6 +70,8 @@ set :stage, :staging
 
 set :access_key_id, '<aws_access_key_id>'
 set :secret_access_key, '<aws_secret_access_key>'
+set :region, '<region>' # default 'us-east-1'
+
 set :stack_id, '<opsworks_stack_id>'
 set :app_id, '<opsworks_app_id>'
 set :opsworks_custom_json, '<opsworks_custom_json>'

@@ -9,10 +9,12 @@ module Capistrano
       def initialize aws={}
         access_key_id = aws.fetch(:access_key_id)
         secret_access_key = aws.fetch(:secret_access_key)
+        region = aws.fetch(:region) || 'us-east-1'
 
         @client = AWS::OpsWorks.new(\
           :access_key_id => access_key_id,
-          :secret_access_key => secret_access_key).client
+          :secret_access_key => secret_access_key,
+          :region => region).client
 
         self
       end
